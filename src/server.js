@@ -1,10 +1,6 @@
 const Hapi = require('@hapi/hapi');
-const mysql = require('mysql'); 
-
 const routes = require('./routes');
  
-
-
 const init = async () => {
   const server = Hapi.server({
     port: 5000,
