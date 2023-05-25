@@ -1,5 +1,6 @@
 const { nanoid } = require('nanoid');
 const travel = require('./travel');
+const mysql = require('mysql'); 
 
 //Konfigurasi Connect Cloud SQL
 const connection = mysql.createConnection({
@@ -24,5 +25,6 @@ const getData = (request, h) => {
       return h.response(error.message).code(500);
     });
   };
+
   
   module.exports = { getData };
