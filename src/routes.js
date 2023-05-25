@@ -4,7 +4,7 @@ const {
 
 const routes = [
     {
-        method  : 'POST',
+        method  : 'GET',
         path    : '/allDestinasi',
         handler : getData,
     }
