@@ -5,15 +5,15 @@ const mysql = require('mysql');
 //Konfigurasi Connect Cloud SQL
 const connection = mysql.createConnection({
     host: '34.101.37.160',
-    user: '[nama_pengguna]',
-    password: '[kata_sandi]',
-    database: '[nama_database]'
+    user: 'root',
+    password: '123456',
+    database: 'capstone'
   });
 
 // Mengambil Data di DB SQL
 const getData = (request, h) => {
     return new Promise((resolve, reject) => {
-      const query = 'SELECT * FROM [nama_tabel]';
+      const query = 'SELECT * FROM tourism';
       connection.query(query, (error, results, fields) => {
         if (error) {
           reject(error);
