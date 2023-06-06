@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node index.js",
     "lint": "eslint ./src"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammad Bil Hakki",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^21.3.2",
