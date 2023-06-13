@@ -1,2 +1,24 @@
 catatan DB dan API
 pass DB : 123456
+
+Deploy Cloud run
+1. git clone https://github.com/MuhBilHakki/Capstone-API.git
+2. npm install
+3. npm run start
+
+1. Build the custom image using Docker.
+=> docker build . -t contact-api-node16
+
+2. run the built image using docker run. The argument -p itself have this format <local-port>:<container-port>. 
+Local port means your machine port should be exposed to client (browser). And container port means that port 
+that should be exposed to your Local.
+=> docker run -p 5000:5000 contact-api-node16
+
+3. Build and submit the custom image to Google Cloud Build. The image will be available on this URL
+=> gcloud builds submit --tag gcr.io/[PROJECT-ID]/sireko-api-hapi
+
+4. gcloud run deploy sireko-api-hapi\
+    --project=[PROJECT-ID]\
+    --platform=managed\
+    --region=asia-southeast2\
+    --image=gcr.io/[PROJECT-ID]/sireko-api-hapi
