@@ -45,6 +45,6 @@ In order to use the endpoint, you have to deploy the API using Cloud Run in Goog
   - -
 - Response
 
-|Working!|
 | <p>{</p><p>`    `"id": "1",</p><p>`    `"place_name": "Monumen Nasional",</p><p>`    `"description": "Monumen Nasional atau yang populer disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia untuk merebut kemerdekaan dari pemerintahan kolonial Hindia Belanda. Pembangunan monumen ini dimulai pada tanggal 17 Agustus 1961 di bawah perintah presiden Soekarno dan dibuka untuk umum pada tanggal 12 Juli 1975. Tugu ini dimahkotai lidah api yang dilapisi lembaran emas yang melambangkan semangat perjuangan yang menyala-nyala. Monumen Nasional terletak tepat di tengah Lapangan Medan Merdeka, Jakarta Pusat.",</p><p>`    `"city": "Jakarta",</p><p>`    ` "rating": "4.6",</p><p>`    `"lat": "-6.17539",</p><p>`    `"lon": "106.827",</p><p>`    `"image": "https://assets.pikiran-rakyat.com/crop/0x416:1077x1079/x/photo/2021/01/26/2869470274.jpg"}, <p>{</p><p>......,</p><p>......,</p><p>......,</p>},<p>......</p> |
+| :- |
 
